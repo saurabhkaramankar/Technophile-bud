@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        College Survey Form
+    </title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+    <div id="outside">
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+
+            <h1 id="title">COLLEGE SURVEY FORM</h1>
+            <p id="description"><b>Note:</b> Fill the form before deaadline </p>
+
+
+            <fieldset>
+
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Enter name here">  
+                
+                    <label id="email-label" for="Email">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Enter email here">  
+                
+                    <label for="date-label">Date of Birth:</label>
+                    <input type="date" name="bday">
+                
+                </div>
+
+                <div>
+                    <label for="Gender">Gender</label>
+                    <p>
+                        <input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </p>
+                </div>
+                
+
+                <div class="wrap">
+
+                    <label for="Likert">Do you agree that college campus is extraordinary ?</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Strongly agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Agree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Neutral</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>Disagree</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>Strongly disagree</label>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+                <div>
+                    <label for="Teaching">Are you satisfied with the teaching staff and their teaching methods ?
+                    </label>
+                    <p>
+                        <input type="radio" name="teaching" value="Extremely Satisfied" checked> Extremely Satisfied<br>
+                        <input type="radio" name="teaching" value="Very Satisfied"> Very Satisfied<br>
+                        <input type="radio" name="teaching" value="Satisfied"> Satisfied<br>
+                        <input type="radio" name="teaching" value="Neutral"> Neutral<br>
+                        <input type="radio" name="teaching" value=Dissatisfied"> Dissatisfied<br>
+                        <input type="radio" name="teaching" value="Very Dissatisfied">Very Dissatisfied<br>
+                        <input type="radio" name="teaching" value="Extremely Dissatisfied"> Extremely Dissatisfied<br>
+                    </p>
+                </div>
+
+                <div>
+                    <label for="Facilities">How satisfied are you with the facilities provided by the college ? </label>
+                    <p>
+                        <input type="radio" name="facilities" value="Extremely Satisfied" checked> Extremely
+                        Satisfied<br>
+                        <input type="radio" name="facilities" value="Very Satisfied"> Very Satisfied<br>
+                        <input type="radio" name="facilities" value="Satisfied"> Satisfied<br>
+                        <input type="radio" name="facilities" value="Neutral"> Neutral<br>
+                        <input type="radio" name="facilities" value=Dissatisfied"> Dissatisfied<br>
+                        <input type="radio" name="facilities" value="Very Dissatisfied">Very Dissatisfied<br>
+                        <input type="radio" name="facilities" value="Extremely Dissatisfied"> Extremely Dissatisfied<br>
+                    </p>
+                </div>
+
+                <div>
+                    <label for="Courses">Do you feel it is easier to register for different courses within the college ?
+                    </label>
+                    <p>
+                        <input type="radio" name="courses" value="Extremely Satisfied" checked> Extremely Satisfied<br>
+                        <input type="radio" name="courses" value="Very Satisfied"> Very Satisfied<br>
+                        <input type="radio" name="courses" value="Satisfied"> Satisfied<br>
+                        <input type="radio" name="courses" value="Neutral"> Neutral<br>
+                        <input type="radio" name="courses" value=Dissatisfied"> Dissatisfied<br>
+                        <input type="radio" name="courses" value="Very Dissatisfied">Very Dissatisfied<br>
+                        <input type="radio" name="courses" value="Extremely Dissatisfied"> Extremely Dissatisfied<br>
+                    </p>
+                </div>
+
+                <div>
+                    <label for="cleanliness">How satisfied are you with the cleanliness and variety of food items
+                        available in the mess/cafe ? </label>
+                    <p>
+                        <input type="radio" name="cleanliness" value="Extremely Satisfied" checked> Extremely
+                        Satisfied<br>
+                        <input type="radio" name="cleanliness" value="Very Satisfied"> Very Satisfied<br>
+                        <input type="radio" name="cleanliness" value="Satisfied"> Satisfied<br>
+                        <input type="radio" name="cleanliness" value="Neutral"> Neutral<br>
+                        <input type="radio" name="cleanliness" value=Dissatisfied"> Dissatisfied<br>
+                        <input type="radio" name="cleanliness" value="Very Dissatisfied">Very Dissatisfied<br>
+                        <input type="radio" name="cleanliness" value="Extremely Dissatisfied"> Extremely
+                        Dissatisfied<br>
+                    </p>
+                </div>
+
+                <div>
+                    <label for="cleanliness">How Supportive were the faculty members ? </label>
+                    <p>
+                        <input type="radio" name="cleanliness" value="Extremely Satisfied" checked> Extremely
+                        Supportive<br>
+                        <input type="radio" name="cleanliness" value="Very Satisfied"> Very Supportive<br>
+                        <input type="radio" name="cleanliness" value="Satisfied"> Supportive<br>
+                        <input type="radio" name="cleanliness" value="Neutral"> Neutral<br>
+                        <input type="radio" name="cleanliness" value=Dissatisfied">Unsupportive<br>
+                        <input type="radio" name="cleanliness" value="Very Dissatisfied">Very Unsupportive<br>
+                        <input type="radio" name="cleanliness" value="Extremely Dissatisfied"> Extremely
+                        Unsupportive<br>
+                    </p>
+                </div>
+
+
+                <div>
+
+                    <label for="Likert">What do you think of the Hostel ?</label>
+                    <ul class='likeryt'>
+                        <li>
+                            <input type="radio" name="likeryt" value="extremely_crowded">
+                            <label>Extremely Crowded</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likeryt" value="very_crowded">
+                            <label>Very Crowded</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likeryt" value="somewhat_rowded">
+                            <label>Somewhat Crowded</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likeryt" value="not_crowded">
+                            <label>Not Crowded</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likeryt" value="not_atall_crowded">
+                            <label>Not at all Crowded</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="politics"> Are you satisfied with teaching staff and their teaching practices ?</label>
+                    <select id="dropdown2">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Likert"> Do you think faculty and support staff at the college were helpful?</label>
+                    <ul class='likert1'>
+                        <li>
+                            <input type="radio" name="likert1" value="very_helpful">
+                            <label>Very Helpful</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert1" value="helpful">
+                            <label>Helpful</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert1" value="neither_nor">
+                            <label>Neither Helpful Nor Helpful</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert1" value="unhelpful">
+                            <label>Unhelpful</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert1" value="very_unhelpful">
+                            <label>Very Unhelpful</label>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <label for="Likert"> How likely are you to attending college next year?</label>
+                    <ul class='likert2'>
+                        <li>
+                            <input type="radio" name="likert2" value="extremely_likely">
+                            <label>Extremely Likely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert2" value="very_likely">
+                            <label>Very Likely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert2" value="somewhat_likely">
+                            <label>Somewhat Likely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert2" value="not_so_likely">
+                            <label>Not so Likely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert2" value="not_atall">
+                            <label>Not at all Likely</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="Accomodation">How satisfied are you with accomodation ? </label>
+                    <p>
+                        <input type="radio" name="accomodation" value="Extremely Satisfied" checked> Extremely
+                        Satisfied<br>
+                        <input type="radio" name="accomodation" value="Very Satisfied"> Very Satisfied<br>
+                        <input type="radio" name="accomodation" value="Satisfied"> Satisfied<br>
+                        <input type="radio" name="accomodation" value="Neutral"> Neutral<br>
+                        <input type="radio" name="accomodation" value=Dissatisfied"> Dissatisfied<br>
+                        <input type="radio" name="accomodation" value="Very Dissatisfied">Very Dissatisfied<br>
+                        <input type="radio" name="accomodation" value="Extremely Dissatisfied"> Extremely
+                        Dissatisfied<br>
+                    </p>
+                </div>
+
+
+                <div>
+                    <label for="Likert">Given achance,Are you willing to pursue another course at a college ?</label>
+                    <ul class='likert3'>
+                        <li>
+                            <input type="radio" name="likert3" value="definetely_yes">
+                            <label>Yes,Definitely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert3" value="probably_yes">
+                            <label>Yes,Probably</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert3" value="probably_no">
+                            <label>Probably No</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert3" value="definetly_no">
+                            <label>Definetly no</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert3" value="cant_say">
+                            <label>Can't Say</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="Likert">Do you think your siblings or friends will be benefited by studying at this
+                        college?</label>
+                    <ul class='likert4'>
+                        <li>
+                            <input type="radio" name="likert4" value="definetely_yes">
+                            <label>Yes,Definitely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert4" value="probably_yes">
+                            <label>Yes,Probably</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert4" value="probably_no">
+                            <label>Probably No</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert4" value="definetly_no">
+                            <label>Definetly no</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert4" value="cant_say">
+                            <label>Can't Say</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="Likert">Do you think college takes enough measures to racial and ethnic bias
+                        </label>
+                    <ul class='likert5'>
+                        <li>
+                            <input type="radio" name="likert5" value="definetely_yes">
+                            <label>Yes,Definitely</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert5" value="probably_yes">
+                            <label>Yes,Probably</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert5" value="probably_no">
+                            <label>Probably No</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert5" value="definetly_no">
+                            <label>Definetly no</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert5" value="cant_say">
+                            <label>Can't Say</label>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+                <div>
+                    <label for="politics">Was it easy to obtain the necessary resources from the college
+                        library?:</label>
+                    <select id="dropdown">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                        <option value="Maybe">Maybe</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="politics"> Is it easy to obtain the necessary resources from the college
+                        library?:</label>
+                    <select id="dropdown2">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="msg"></label>
+                    <p> Please provide us with additional feedback on areas that need improvement</p>
+                    <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+                     
+                </div>
+                <div>
+
+                    <p>Upload Your College ID Card : <button>Attach Files</button></p>
+            </fieldset>
+
+            <div id="submitbutton">
+                <button type="submit" id="submit">Submit</button>  
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
